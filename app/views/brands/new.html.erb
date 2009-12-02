@@ -1,0 +1,22 @@
+<ul id="tabnav">
+  <li><%= link_to '品牌列表', brands_path %></li>
+	<li><span>新增品牌</span></li>
+</ul>
+<div id="main_zone">
+<% form_for(@brand) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :short_name, "简称：" %><br />
+    <%= f.text_field :short_name, :class => 'upcase_input' %>
+  </p>
+  <p>
+    <%= f.label :brand_name, "品牌名称：" %><br />
+    <%= f.text_field :brand_name %>
+  </p>
+  <p>
+    <%= f.submit '保存' %>
+  </p>
+<% end %>
+
+</div>

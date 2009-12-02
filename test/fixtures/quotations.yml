@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  supplier_id: 1
+  brand_short_name: MyString
+  model_short_name: MyString
+  quotation_price: 9.99
+
+two:
+  supplier_id: 1
+  brand_short_name: MyString
+  model_short_name: MyString
+  quotation_price: 9.99

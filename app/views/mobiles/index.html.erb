@@ -1,0 +1,52 @@
+<ul id="tabnav">
+        <li><span>手机列表</span></li>
+	<li><%= link_to '新增手机', new_mobile_path %></li>
+</ul>
+<div id="main_zone">
+
+<% form_tag("mobiles", :method => "get") do %>
+  品牌：<%= select_tag "brand", "<option></option>" + options_for_select(Brand.all(:order => 'short_name').collect{ |b| [b.refname, b.id] })  %>
+  型号：<%= text_field_tag :model %>
+  <%= submit_tag("Search", :name => nil) %>
+<% end %>
+
+  <%= will_paginate @mobiles %>
+
+  <table class="data_table">
+    <caption>手机报价清单</caption>
+    <thead>
+      <tr>
+        <th class="nobg">手机报价</th>
+        <th>配置</th>
+        <th>描述</th>
+        <th>价格</th>
+        <th>报价</th>
+        <th>报价日期</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @mobiles.each do |mobile| %>
+      <tr>
+        <td><%=h mobile.name %></td>
+        <td><%=h mobile.part %></td>
+        <td><%=h mobile.remark %></td>
+        <td><%=h mobile.price %></td>
+        <td><%=h mobile.mquotation.price if mobile.mquotation %></td>
+        <td><%= mobile.mquotation.date.strftime('%Y.%m.%d') if mobile.mquotation %></td>
+        <td>
+          <div style="float:right;"  class="ui-state-default ui-corner-all" title="删除">
+            <%= link_to '删除', mobile, :confirm => '确认删除吗？', :method => :delete, :class=>"ui-icon ui-icon-close" %>
+          </div>
+          <div style="float:right;margin-right:4px;"  class="ui-state-default ui-corner-all" title="修改">
+            <%= link_to '修改', edit_mobile_path(mobile), :class=>"ui-icon ui-icon-pencil" %>
+          </div>
+
+        </td>
+      </tr>
+      <% end %>
+    </tbody>
+</table>
+<%= will_paginate @mobiles %>
+</div>

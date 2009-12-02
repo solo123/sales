@@ -1,0 +1,15 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+mobile:
+<%
+  mobile = Mobile.find(:first, :conditions => ["brand=? and model=?", quotation_mobile.brand_short_name, quotation_mobile.model_short_name])
+  if !( mobile.nil?)
+%>
+<%= mobile.model %>,
+<%= mobile.battery %>,
+<%= mobile.remark %>,
+<%= mobile.price %>
+<% end %>

@@ -1,0 +1,10 @@
+<h1>Your Pragmatic Catalog</h1>
+<%for product in @products -%>
+  <div class="entry">
+    <h3><%=h product.brand + " | " + product.model %></h3>
+    <%= product.remark %>
+    <div class="price-line">
+        <span class="price"><%= product.price%></span>
+    </div>
+  </div>
+<%end%>

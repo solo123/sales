@@ -1,0 +1,52 @@
+<%  content_for :head do %>
+  <%= javascript_include_tag 'quotation' %>
+<% end %>
+
+<div id="main_zone">
+<% form_for :quotation, :html=>{:method=>"post",:id=>"new-quotation"}, :url=>{:controller=>"quotations", :action=>"create"} do |f|%>
+  <p>报价日期：<%= f.text_field :quotation_date, :size=>10, :value => Time.now.strftime("%Y-%m-%d") %>
+  供应商：
+    <%=  collection_select(:quotation, :supplier_id, Supplier.all, :id, :company_name, {:prompt => true }) %>
+    品牌：
+    <%= f.text_field :brand_short_name, :size=>5 %>
+  </p><p>
+    型号：
+    <%= f.text_field :model_short_name, :size=>10 %>
+    报价：
+    <%= f.text_field :quotation_price, :size=>10 %>
+    备注：
+    <%= f.text_field :remark, :size=>10 %>
+    <%= submit_tag '新报价', :class => 'button' %>
+  </p>
+<% end %>
+
+    <p>
+      <a href="#" onclick="refresh_list();return false;">刷新列表</a>
+      <a href="#" onclick="submit_quotation();return false;">提交报价</a>
+    </p>
+<div id="quotation-list">
+  <%= render :partial => 'quotation_list'%>
+</div>
+
+<!-- ui-dialog -->
+<div id="dialog" title="新增品牌">
+  <% form_for :brand, :html=>{:method=>"post",:id=>"new-brand"}, :url=>{:controller=>"brands", :action=>"post_data"} do |f|%>
+  <p>
+    品牌简称：<%= f.text_field :short_name, :size=>10, :class => "upcase_input" %>
+  </p>
+  <p>
+    品牌名称：<%= f.text_field :brand_name, :size=>10 %>
+  </p>
+  <%= submit_tag '新品牌', :class => 'button' %>
+  <% end %>
+</div>
+
+<!-- ui-dialog -->
+<div id="dialog_edit" title="修改报价">
+  <iframe src="" width="100%" height="95%" frameborder="0" scrolling="no"></iframe>
+</div>
+
+</div>
+
+
+

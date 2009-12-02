@@ -1,0 +1,20 @@
+# MySql
+development:
+  adapter: mysql
+  database: coolpur
+  encoding: utf8
+  timeout: 5000
+  username: root
+  password: liang
+  host: localhost
+
+# MySql
+test:
+  adapter: mysql
+  database: coolpur_test
+  encoding: utf8
+  timeout: 5000
+  username: root
+  password: liang
+  host: localhost
+

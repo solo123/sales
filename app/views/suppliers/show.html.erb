@@ -1,0 +1,33 @@
+<p>
+  <b>Short name:</b>
+  <%=h @supplier.short_name %>
+</p>
+
+<p>
+  <b>Company name:</b>
+  <%=h @supplier.company_name %>
+</p>
+
+<p>
+  <b>Contact phone:</b>
+  <%=h @supplier.contact_phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @supplier.email %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @supplier.address %>
+</p>
+
+<p>
+  <b>Remark:</b>
+  <%=h @supplier.remark %>
+</p>
+
+
+<%= link_to 'Edit', edit_supplier_path(@supplier) %> |
+<%= link_to 'Back', suppliers_path %>

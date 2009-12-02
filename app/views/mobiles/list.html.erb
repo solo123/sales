@@ -1,0 +1,43 @@
+<ul id="tabnav">
+	<li><span>手机及报价</span></li>
+	<li><%= link_to '新增手机', new_mobile_path %></li>
+</ul>
+<div id="main_zone">
+<table id="mobile_list_table" class="tablesorter" cellspacing="1" cellpadding="0" border="0">
+    <thead>
+  <tr>
+    <th>品牌</th>
+    <th>型号</th>
+    <th>版本</th>
+    <th>电池</th>
+    <th>T卡</th>
+    <th>屏幕</th>
+    <th>款式</th>
+    <th>系统</th>
+    <th>备注</th>
+    <th>价格</th>
+  </tr>
+           </thead>
+  <tbody>
+<% @mobiles.each do |mobile| %>
+  <tr>
+    <td><%=h mobile.brand %></td>
+    <td><%=h mobile.model %></td>
+    <td><%=h mobile.version %></td>
+    <td><%=h mobile.battery %></td>
+    <td><%=h mobile.Tcard %></td>
+    <td><%=h mobile.screen %></td>
+    <td><%=h mobile.style %></td>
+    <td><%=h mobile.system %></td>
+    <td><%=h mobile.remark %></td>
+    <td><%= mobile.price %></td>
+  </tr>
+<% end %>
+</tbody>
+</table>
+</div>
+<script type="text/javascript">
+$(function() {
+		$("#mobile_list_table").tablesorter({sortList:[[0,0],[1,1]], widgets: ['zebra']});
+	});
+</script>

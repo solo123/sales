@@ -1,0 +1,21 @@
+<% form_for(@quotation) do |f| %>
+<p>
+  报价日期：<%= f.text_field :quotation_date, :size=>10, :value => Time.now.strftime("%Y-%m-%d") %>
+  供应商：
+    <%=  collection_select(:quotation, :supplier_id, Supplier.all, :id, :company_name, {:prompt => true}) %>
+    品牌：
+    <%= f.text_field :brand_short_name, :size=>5 %>
+</p><p>
+    型号：
+    <%= f.text_field :model_short_name, :size=>10 %>
+    报价：
+    <%= f.text_field :quotation_price, :size=>10 %>
+    <%= f.submit '新报价', :class => 'button' %>
+</p>
+    <%= f.error_messages %>
+    <% if flash[:notice] -%>
+      <b><%= flash[:notice] %></b>
+    <% end -%>
+  </p>
+<% end %>
+

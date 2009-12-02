@@ -1,0 +1,49 @@
+<table  class="data_table">
+  <thead>
+  <tr>
+    <th>供应商</th>
+    <th>品牌</th>
+    <th>型号</th>
+    <th>价格</th>
+    <th>备注</th>
+    <th>市场价</th>
+    <th>差额</th>
+    <th>说明</th>
+    <th>操作</th>
+  </tr>
+  </thead>
+  <tbody>
+<% @quotations.each do |quotation| %>
+
+<tr>
+    <td><%=h  (quotation.supplier_id!=nil && quotation.supplier_id>0) ? Supplier.find(quotation.supplier_id).company_name : "" %></td>
+    <td><%= ( quotation.brand_id>0 && (bb = Brand.find(quotation.brand_id)) ) ? "#{bb.brand_name} | #{quotation.brand_short_name}" : "<span class='error_brand error_input_text'>#{quotation.brand_short_name}</span>" %></td>
+    <td><%=h quotation.model_short_name %></td>
+    <td align="right"><%=h quotation.quotation_price %></td>
+    <td><%=h quotation.remark %></td>
+    <% if quotation.status==nil or quotation.status==0 %>
+    <td colspan="3">
+        <% if ( quotation.mobile_id == nil or quotation.mobile_id==0) and quotation.brand_id>0  %>
+          <a href="#" onclick="add_new_mobile('<%=  quotation.brand_id %>','<%=h  quotation.model_short_name %>','<%=h quotation.remark %>', '<%= quotation.quotation_price + 100 %>');return false;">添加</a>
+        <% end %>
+    </td>
+    <% else
+        m_mobile = Mobile.find_by_id(quotation.mobile_id)
+      %>
+        <td align="right"><%= m_mobile.price %></td>
+        <td align="right"><%= quotation.quotation_price - m_mobile.price if quotation.quotation_price %></td>
+        <td>
+          <%=h m_mobile.part %>,
+          <%=h m_mobile.remark %>
+        </td>
+    <% end %>
+    <td>
+      <div style="float:left;"  class="ui-state-default ui-corner-all"><a href="#" onclick="edit_quotation(<%= quotation.id %>);return false;" class="ui-icon ui-icon-pencil" ></a></div>
+      <div style="float:left;margin-left:4px;" class="ui-state-default ui-corner-all"><%= link_to '删除',  {:controller=>"quotations", :action=>"delete",:id=>quotation.id}, :class=>"ui-icon ui-icon-close delete" %></div>
+    </td>
+  </tr>
+
+<% end %>
+  </tbody>
+</table>
+

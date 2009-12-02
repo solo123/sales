@@ -1,0 +1,41 @@
+<ul id="tabnav">
+	<li><%= link_to '手机及报价', mobiles_path %></li>
+	<li><%= link_to '新增手机', new_mobile_path %></li>
+        <li><span>修改资料</span></li>
+</ul>
+<div id="main_zone">
+
+<% form_for(@mobile) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name, "名称：" %><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+      <%= f.label :brand_id, "品牌：" %><br />
+      <%= f.text_field :brand_id %>
+    </p>
+  <p>
+    <%= f.label :model, "型号：" %><br />
+    <%= f.text_field :model %>
+  </p>
+  <p>
+    <%= f.label :part, "配置：" %><br />
+    <%= f.text_field :part %>
+  </p>
+  <p>
+    <%= f.label :remark, "描述：" %><br />
+    <%= f.text_field :remark %>
+  </p>
+  <p>
+    <%= f.label :price, "价格：" %><br />
+    <%= f.text_field :price %>
+  </p>
+  <p>
+    <%= f.submit '保存' %>
+  </p>
+<% end %>
+
+</div>

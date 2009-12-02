@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <title>Coolpur.com - <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'Coolpur', 'jquery_ui_css/redmond/jquery-ui-1.7.2.custom' %>
+  <%= javascript_include_tag 'jquery-1.3.2.min', 'jquery-ui-1.7.2.custom.min', 'jquery.form','jquery.validate.min','application' %>
+  <%= yield :head %>
+  <style type="text/css">
+  body { background: #2e788f url("/images/main/bg.jpg") top left repeat-x; margin: 0; padding: 0; border: none; font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; }
+  </style>
+</head>
+<body>
+
+<%= render(:partial => "/admin/flash_alert" ) %>
+
+<div id="main_body">
+
+  <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tr>
+      <td width="200" id="left_body" valign="top">
+        <div class="ui-corner-all left_body_block">
+          <%= render(:partial => "/admin/current_user_status") %>
+        </div>
+        <br />
+        <div class="ui-corner-all left_body_block">
+          <%= render(:partial => "/admin/employee_menu") %>
+        </div>
+        <% if session[:user_role]=='admin' %>
+        <br />
+        <div class="ui-corner-all left_body_block">
+          <%= render(:partial => '/admin/admin_menu') %>
+        </div>
+        <% end %>
+      </td>
+      <td id="middle_body" width="80%" valign="top">
+        <%= yield %>
+      </td>
+      <td id="right_body" valign="top">
+        
+      </td>
+    </tr>
+  </table>
+
+</div>
+
+<div id="ajaxBusy">
+  <div class="header">读取数据，请稍候...</div>
+  <div class="body"><img src="/images/activity.gif" /></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<h1>Listing mobiles</h1>
+
+<% form_tag("search", :method => "get") do %>
+  <%= text_field_tag(:search) %>
+  <%= submit_tag("Search", :name => nil) %>
+<% end %>
+
+
+<table>
+  <tr>
+    <th>Image</th>
+    <th>Brand</th>
+    <th>Model</th>
+    <th>Version</th>
+    <th>Battery</th>
+    <th>Tcard</th>
+    <th>Screen</th>
+    <th>Style</th>
+    <th>System</th>
+    <th>Remark</th>
+    <th>Price</th>
+  </tr>
+
+<% @mobiles.each do |mobile| %>
+  <tr>
+    <td><img src="/images/mobiles/small/image<%= "%03d"%(mobile.id-1)  %>.jpg" alt="无图片" /></td>
+    <td><%=h mobile.brand %></td>
+    <td><%=h mobile.model %></td>
+    <td><%=h mobile.version %></td>
+    <td><%=h mobile.battery %></td>
+    <td><%=h mobile.Tcard %></td>
+    <td><%=h mobile.screen %></td>
+    <td><%=h mobile.style %></td>
+    <td><%=h mobile.system %></td>
+    <td><%=h mobile.remark %></td>
+    <td><%=h mobile.price %></td>
+    <td><%= link_to 'Show', mobile %></td>
+    <td><%= link_to 'Edit', edit_mobile_path(mobile) %></td>
+    <td><%= link_to 'Destroy', mobile, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<hr />
+
+<br />
+
+<%= link_to 'New mobile', new_mobile_path %>

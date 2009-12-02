@@ -1,0 +1,33 @@
+  <% form_tag do %>
+    <label for="name">Query:</label>
+    <%= text_field_tag :query_cnd, params[:query_cnd] %>
+
+    <%= submit_tag "Go" %>
+  <% end %>
+<h1>Listing quotations</h1>
+
+<table>
+  <tr>
+    <th>Supplier</th>
+    <th>Brand short name</th>
+    <th>Model short name</th>
+    <th>Quotation price</th>
+  </tr>
+
+<% @quotations.each do |quotation| %>
+  <tr>
+    <td><%=h quotation.supplier_id %></td>
+    <td><%=h quotation.brand_short_name %></td>
+    <td><%=h quotation.model_short_name %></td>
+    <td><%=h quotation.quotation_price %></td>
+    <td><%= link_to 'Show', quotation %></td>
+    <td><%= link_to 'Edit', edit_quotation_path(quotation) %></td>
+    <td><%= link_to 'Destroy', quotation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<hr />
+<%= will_paginate @quotations %>
+<br />
+
+<%= link_to 'New quotation', new_quotation_path %>

@@ -1,0 +1,10 @@
+<div id="main_zone">
+  <h1>Welcome</h1>
+It's <%= Time.now %>. <%=t :hello %>
+
+<hr />
+<ul>
+	<li><%= link_to '手机信息维护', :controller => 'mobiles' %></li>
+	<li><%= link_to '报价录入', :controller => 'quotations', :action=>'check', :id=>'0' %></li>
+</ul>
+    </div>

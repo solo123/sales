@@ -1,0 +1,28 @@
+<ul id="tabnav">
+	<li><%= link_to '用户列表', users_path %></li>
+	<li><%= link_to '新增用户', new_user_path %></li>
+    <li><span>修改资料</span></li>
+</ul>
+<div id="main_zone">
+
+<% form_for(@user) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :login_name,"登录名：" %><br />
+    <%= f.text_field :login_name %>
+  </p>
+  <p>
+    <%= f.label :nick_name, "用户名：" %><br />
+    <%= f.text_field :nick_name %>
+  </p>
+  <p>
+    <%= f.label :role_id, "权限：" %>
+    <%= f.select :role_id, User::ROLE_LIST, :prompt => "请选择..." %>
+  </p>
+
+  <p>
+    <%= f.submit '保存' %>
+  </p>
+<% end %>
+</div>

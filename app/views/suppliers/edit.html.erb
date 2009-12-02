@@ -1,0 +1,42 @@
+<ul id="tabnav">
+	<li><%= link_to '供应商列表', suppliers_path %></li>
+	<li><%= link_to '新增供应商', new_supplier_path %></li>
+    <li><span>修改资料</span></li>
+</ul>
+<div id="main_zone">
+<% form_for(@supplier) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    简称：<br />
+    <%= f.text_field :short_name %>
+  </p>
+  <p>
+    供应商名称：<br />
+    <%= f.text_field :company_name %>
+  </p>
+  <p>
+    联系人：<br />
+    <%= f.text_field :contact %>
+  </p>  <p>
+    联系电话：<br />
+    <%= f.text_field :contact_phone %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    地址：<br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    备注：<br />
+    <%= f.text_field :remark %>
+  </p>
+  <p>
+    <%= f.submit '保存' %>
+  </p>
+<% end %>
+
+</div>

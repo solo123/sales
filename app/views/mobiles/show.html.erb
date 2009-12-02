@@ -1,0 +1,36 @@
+<ul id="tabnav">
+	<li><%= link_to '手机及报价', mobiles_path %></li>
+	<li><%= link_to '新增手机', new_mobile_path %></li>
+        <li><span>手机资料</span></li>
+</ul>
+<div id="main_zone">
+<p>
+  <b>Name:</b>
+  <%=h @mobile.name %>
+</p>
+<p>
+  <b>Brand:</b>
+  <%=h @mobile.brand_id %>
+</p>
+
+<p>
+  <b>Model:</b>
+  <%=h @mobile.model %>
+</p>
+
+<p>
+  <b>Part:</b>
+  <%=h @mobile.part %>
+</p>
+
+<p>
+  <b>Remark:</b>
+  <%=h @mobile.remark %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%=h @mobile.price %>
+</p>
+
+</div>

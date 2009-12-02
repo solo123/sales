@@ -1,0 +1,29 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<ul id="tabnav">
+	<li><span>重设密码</span></li>
+	<li><%= link_to '账户信息', '/account' %></li>
+</ul>
+<div id="main_zone">
+<% form_for(@account, :url => {:action => 'update'} ) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :login_name,"登录名：" %> <%= @account.login_name %> (<%= @account.nick_name  %>)
+  </p>
+  <p>
+    <%= f.label :user_password, '登录密码' %><br />
+    <%= f.password_field :password, :size=>40 %>
+  </p>
+  <p>
+    <%= f.label :user_password_confirm, '重输密码' %><br />
+    <%= f.password_field :password_confirmation, :size=>40 %>
+  </p>
+  <p>
+    <%= f.submit '重设密码' %>
+  </p>
+<% end %>
+</div>

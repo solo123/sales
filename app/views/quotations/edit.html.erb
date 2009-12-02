@@ -1,0 +1,34 @@
+<style type="text/css">
+  p {font-size:13px;margin:4px;padding:2px; }
+</style>
+
+<% form_for(@quotation) do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :supplier_id, "供应商" %><br />
+    <%= f.text_field :supplier_id %>
+  </p>
+  <p>
+    <%= f.label :brand_short_name, "品牌" %><br />
+    <%= f.text_field :brand_short_name %>
+  </p>
+  <p>
+    <%= f.label :model_short_name, "型号" %><br />
+    <%= f.text_field :model_short_name %>
+  </p>
+  <p>
+    <%= f.label :quotation_price, "报价" %><br />
+    <%= f.text_field :quotation_price %>
+  </p>
+  <p>
+    <%= f.label :remark, "备注" %><br />
+    <%= f.text_field :remark %>
+  </p>  <p>
+    <%= f.submit '保存' %>
+  </p>
+  <p>
+    <% if flash[:notice] -%>
+      <b><%= flash[:notice] %></b>
+    <% end -%>
+  </p>
+<% end %>

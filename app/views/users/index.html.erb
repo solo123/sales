@@ -1,0 +1,31 @@
+<ul id="tabnav">
+	<li><span>用户列表</span></li>
+	<li><%= link_to '新增用户', new_user_path %></li>
+</ul>
+<div id="main_zone">
+  <table class="data_table">
+  <tr>
+    <th>登录名</th>
+    <th>用户名</th>
+    <th>等级</th>
+    <th>操作</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%=h user.login_name %></td>
+    <td><%=h user.nick_name %></td>
+    <td><%=h user.role_id %>, <%=h user.role %></td>
+    <td>
+      <div style="float:left;"  class="ui-state-default ui-corner-all" title="修改">
+        <%= link_to 'Edit', edit_user_path(user), :class=>"ui-icon ui-icon-pencil" %>
+      </div>
+      <div style="float:left;margin-left:8px;"  class="ui-state-default ui-corner-all" title="删除">
+        <%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete, :class=>"ui-icon ui-icon-close" %>
+      </div>
+    </td>
+    
+  </tr>
+<% end %>
+</table>
+</div>

@@ -1,0 +1,30 @@
+<ul id="tabnav">
+  <li><%= link_to '用户列表', users_path %></li>
+	<li><span>新增用户</span></li>
+</ul>
+<div id="main_zone">
+<% form_for(@user) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :login_name, "登录名" %><br />
+    <%= f.text_field :login_name %>
+  </p>
+  <p>
+    <%= f.label :nick_name, "用户名" %><br />
+    <%= f.text_field :nick_name %>
+  </p>
+  <p>
+    <%= f.label :user_password, '登录密码' %><br />
+    <%= f.password_field :password, :size=>40 %>
+  </p>
+  <p>
+    <%= f.label :user_password_confirm, '重输密码' %><br />
+    <%= f.password_field :password_confirmation, :size=>40 %>
+  </p>
+  <p>
+    <%= f.submit '保存' %>
+  </p>
+<% end %>
+
+</div>

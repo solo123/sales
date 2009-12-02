@@ -1,0 +1,51 @@
+zh-CN: 
+  activerecord: 
+    models: 
+      brand: "商标"  #g
+      mobile: "手机"  #g
+      quotation: "报价"  #g
+      supplier: "供应商"  #g
+      user: "用户"  #g
+
+    attributes: 
+      brand: 
+        short_name: "简称"  #g
+        brand_name: "品牌名称"  #g
+
+      mobile: 
+        brand: "商标"  #g
+        model: "模型"  #g
+        version: "版本"  #g
+        battery: "电池"  #g
+        Tcard: "Tcard"  #g
+        screen: "屏幕"  #g
+        style: "风格"  #g
+        system: "系统"  #g
+        remark: "备注"  #g
+        price: "价格"  #g
+        status: "身份"  #g
+        quotations: "报价"  #g
+
+      quotation: 
+        brand_short_name: "品牌短名称"  #g
+        model_short_name: "模型短名称"  #g
+        quotation_price: "报价价格"  #g
+        status: "身份"  #g
+        mobile: "手机"  #g
+
+      supplier: 
+        short_name: "缩写"  #g
+        company_name: "供应商名称"  #g
+        contact_phone: "联系电话"  #g
+        email: "Email"  #g
+        address: "地址"  #g
+        remark: "备注"  #g
+
+      user: 
+        login_name: "登录名"  #g
+        nick_name: "用户名"  #g
+        hashed_password: "哈希密码"  #g
+        salt: "salt"  #g
+
+  hello: "你好"  #g
+

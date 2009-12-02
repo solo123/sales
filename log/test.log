@@ -1,0 +1,742 @@
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSELECT count(*) AS count_all FROM `brands` [0m
+
+
+Processing BrandsController#create (for 0.0.0.0 at 2009-11-29 12:13:57) [POST]
+  Parameters: {"brand"=>{}}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 108) | 302 Found [http://test.host/brands?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `brands` [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `brands` [0m
+  [4;36;1mBrand Load (0.0ms)[0m   [0;1mSELECT * FROM `brands` WHERE (`brands`.`id` = 2053932785) [0m
+
+
+Processing BrandsController#destroy (for 0.0.0.0 at 2009-11-29 12:13:57) [DELETE]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 15ms (DB: 0) | 302 Found [http://test.host/brands/2053932785]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `brands` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBrand Load (0.0ms)[0m   [0;1mSELECT * FROM `brands` WHERE (`brands`.`id` = 2053932785) [0m
+
+
+Processing BrandsController#edit (for 0.0.0.0 at 2009-11-29 12:13:57) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/brands/2053932785/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing BrandsController#index (for 0.0.0.0 at 2009-11-29 12:13:57) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 16ms (DB: 0) | 302 Found [http://test.host/brands]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing BrandsController#new (for 0.0.0.0 at 2009-11-29 12:13:57) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/brands/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBrand Load (0.0ms)[0m   [0mSELECT * FROM `brands` WHERE (`brands`.`id` = 2053932785) [0m
+
+
+Processing BrandsController#show (for 0.0.0.0 at 2009-11-29 12:13:57) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/brands/2053932785]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBrand Load (0.0ms)[0m   [0;1mSELECT * FROM `brands` WHERE (`brands`.`id` = 2053932785) [0m
+
+
+Processing BrandsController#update (for 0.0.0.0 at 2009-11-29 12:13:57) [PUT]
+  Parameters: {"brand"=>{}, "id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/brands/2053932785?]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMobile Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `mobiles`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `mobiles` [0m
+
+
+Processing MobilesController#create (for 0.0.0.0 at 2009-11-29 12:13:58) [POST]
+  Parameters: {"mobile"=>{}}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/mobiles?]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `mobiles` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `mobiles` [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing MobilesController#index (for 0.0.0.0 at 2009-11-29 12:13:58) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/mobiles]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing MobilesController#new (for 0.0.0.0 at 2009-11-29 12:13:58) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/mobiles/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `quotations` [0m
+
+
+Processing QuotationsController#create (for 0.0.0.0 at 2009-11-29 12:13:58) [POST]
+  Parameters: {"quotation"=>{}}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/quotations?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `quotations` [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `quotations` [0m
+  [4;36;1mQuotation Load (0.0ms)[0m   [0;1mSELECT * FROM `quotations` WHERE (`quotations`.`id` = 2053932785) [0m
+
+
+Processing QuotationsController#destroy (for 0.0.0.0 at 2009-11-29 12:13:58) [DELETE]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/quotations/2053932785]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `quotations` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mQuotation Load (0.0ms)[0m   [0;1mSELECT * FROM `quotations` WHERE (`quotations`.`id` = 2053932785) [0m
+
+
+Processing QuotationsController#edit (for 0.0.0.0 at 2009-11-29 12:13:58) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/quotations/2053932785/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing QuotationsController#index (for 0.0.0.0 at 2009-11-29 12:13:58) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/quotations]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing QuotationsController#new (for 0.0.0.0 at 2009-11-29 12:13:59) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/quotations/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mQuotation Load (0.0ms)[0m   [0mSELECT * FROM `quotations` WHERE (`quotations`.`id` = 2053932785) [0m
+
+
+Processing QuotationsController#show (for 0.0.0.0 at 2009-11-29 12:13:59) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/quotations/2053932785]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mQuotation Load (0.0ms)[0m   [0;1mSELECT * FROM `quotations` WHERE (`quotations`.`id` = 2053932785) [0m
+
+
+Processing QuotationsController#update (for 0.0.0.0 at 2009-11-29 12:13:59) [PUT]
+  Parameters: {"id"=>"2053932785", "quotation"=>{}}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/quotations/2053932785?]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `suppliers` [0m
+
+
+Processing SuppliersController#create (for 0.0.0.0 at 2009-11-29 12:13:59) [POST]
+  Parameters: {"supplier"=>{}}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/suppliers?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `suppliers` [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `suppliers` [0m
+  [4;36;1mSupplier Load (0.0ms)[0m   [0;1mSELECT * FROM `suppliers` WHERE (`suppliers`.`id` = 2053932785) [0m
+
+
+Processing SuppliersController#destroy (for 0.0.0.0 at 2009-11-29 12:13:59) [DELETE]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/suppliers/2053932785]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `suppliers` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSupplier Load (0.0ms)[0m   [0;1mSELECT * FROM `suppliers` WHERE (`suppliers`.`id` = 2053932785) [0m
+
+
+Processing SuppliersController#edit (for 0.0.0.0 at 2009-11-29 12:13:59) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/suppliers/2053932785/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing SuppliersController#index (for 0.0.0.0 at 2009-11-29 12:13:59) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/suppliers]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing SuppliersController#new (for 0.0.0.0 at 2009-11-29 12:13:59) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/suppliers/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSupplier Load (0.0ms)[0m   [0mSELECT * FROM `suppliers` WHERE (`suppliers`.`id` = 2053932785) [0m
+
+
+Processing SuppliersController#show (for 0.0.0.0 at 2009-11-29 12:13:59) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/suppliers/2053932785]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSupplier Load (0.0ms)[0m   [0;1mSELECT * FROM `suppliers` WHERE (`suppliers`.`id` = 2053932785) [0m
+
+
+Processing SuppliersController#update (for 0.0.0.0 at 2009-11-29 12:13:59) [PUT]
+  Parameters: {"supplier"=>{}, "id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/suppliers/2053932785?]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-11-29 12:13:59) [POST]
+  Parameters: {"user"=>{}}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 16ms (DB: 0) | 302 Found [http://test.host/users?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2053932785) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-11-29 12:13:59) [DELETE]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 15) | 302 Found [http://test.host/users/2053932785]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2053932785) [0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-11-29 12:13:59) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/2053932785/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-11-29 12:14:00) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-11-29 12:14:00) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2053932785) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-11-29 12:14:00) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/2053932785]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2053932785) [0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-11-29 12:14:00) [PUT]
+  Parameters: {"user"=>{}, "id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/2053932785?]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `brands` [0m
+
+
+Processing BrandsController#create (for 0.0.0.0 at 2009-11-29 22:15:38) [POST]
+  Parameters: {"brand"=>{}}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 62) | 302 Found [http://test.host/brands?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `brands` [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `brands` [0m
+  [4;36;1mBrand Load (0.0ms)[0m   [0;1mSELECT * FROM `brands` WHERE (`brands`.`id` = 2053932785) [0m
+
+
+Processing BrandsController#destroy (for 0.0.0.0 at 2009-11-29 22:15:38) [DELETE]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/brands/2053932785]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `brands` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBrand Load (0.0ms)[0m   [0;1mSELECT * FROM `brands` WHERE (`brands`.`id` = 2053932785) [0m
+
+
+Processing BrandsController#edit (for 0.0.0.0 at 2009-11-29 22:15:38) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/brands/2053932785/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing BrandsController#index (for 0.0.0.0 at 2009-11-29 22:15:38) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/brands]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing BrandsController#new (for 0.0.0.0 at 2009-11-29 22:15:38) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/brands/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBrand Load (0.0ms)[0m   [0mSELECT * FROM `brands` WHERE (`brands`.`id` = 2053932785) [0m
+
+
+Processing BrandsController#show (for 0.0.0.0 at 2009-11-29 22:15:38) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/brands/2053932785]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mBrand Load (0.0ms)[0m   [0;1mSELECT * FROM `brands` WHERE (`brands`.`id` = 2053932785) [0m
+
+
+Processing BrandsController#update (for 0.0.0.0 at 2009-11-29 22:15:38) [PUT]
+  Parameters: {"brand"=>{}, "id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/brands/2053932785?]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mMobile Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `mobiles`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `mobiles` [0m
+
+
+Processing MobilesController#create (for 0.0.0.0 at 2009-11-29 22:15:38) [POST]
+  Parameters: {"mobile"=>{}}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/mobiles?]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `mobiles` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `mobiles` [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing MobilesController#index (for 0.0.0.0 at 2009-11-29 22:15:39) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/mobiles]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing MobilesController#new (for 0.0.0.0 at 2009-11-29 22:15:39) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/mobiles/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `quotations` [0m
+
+
+Processing QuotationsController#create (for 0.0.0.0 at 2009-11-29 22:15:39) [POST]
+  Parameters: {"quotation"=>{}}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/quotations?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `quotations` [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `quotations` [0m
+  [4;36;1mQuotation Load (0.0ms)[0m   [0;1mSELECT * FROM `quotations` WHERE (`quotations`.`id` = 2053932785) [0m
+
+
+Processing QuotationsController#destroy (for 0.0.0.0 at 2009-11-29 22:15:39) [DELETE]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/quotations/2053932785]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `quotations` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mQuotation Load (0.0ms)[0m   [0;1mSELECT * FROM `quotations` WHERE (`quotations`.`id` = 2053932785) [0m
+
+
+Processing QuotationsController#edit (for 0.0.0.0 at 2009-11-29 22:15:39) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/quotations/2053932785/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing QuotationsController#index (for 0.0.0.0 at 2009-11-29 22:15:39) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/quotations]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing QuotationsController#new (for 0.0.0.0 at 2009-11-29 22:15:39) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/quotations/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mQuotation Load (0.0ms)[0m   [0mSELECT * FROM `quotations` WHERE (`quotations`.`id` = 2053932785) [0m
+
+
+Processing QuotationsController#show (for 0.0.0.0 at 2009-11-29 22:15:39) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/quotations/2053932785]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mQuotation Load (0.0ms)[0m   [0;1mSELECT * FROM `quotations` WHERE (`quotations`.`id` = 2053932785) [0m
+
+
+Processing QuotationsController#update (for 0.0.0.0 at 2009-11-29 22:15:39) [PUT]
+  Parameters: {"id"=>"2053932785", "quotation"=>{}}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/quotations/2053932785?]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `suppliers` [0m
+
+
+Processing SuppliersController#create (for 0.0.0.0 at 2009-11-29 22:15:40) [POST]
+  Parameters: {"supplier"=>{}}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/suppliers?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `suppliers` [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `suppliers` [0m
+  [4;36;1mSupplier Load (0.0ms)[0m   [0;1mSELECT * FROM `suppliers` WHERE (`suppliers`.`id` = 2053932785) [0m
+
+
+Processing SuppliersController#destroy (for 0.0.0.0 at 2009-11-29 22:15:40) [DELETE]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/suppliers/2053932785]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `suppliers` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSupplier Load (0.0ms)[0m   [0;1mSELECT * FROM `suppliers` WHERE (`suppliers`.`id` = 2053932785) [0m
+
+
+Processing SuppliersController#edit (for 0.0.0.0 at 2009-11-29 22:15:40) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/suppliers/2053932785/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing SuppliersController#index (for 0.0.0.0 at 2009-11-29 22:15:40) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/suppliers]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing SuppliersController#new (for 0.0.0.0 at 2009-11-29 22:15:40) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/suppliers/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSupplier Load (0.0ms)[0m   [0mSELECT * FROM `suppliers` WHERE (`suppliers`.`id` = 2053932785) [0m
+
+
+Processing SuppliersController#show (for 0.0.0.0 at 2009-11-29 22:15:40) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 15ms (DB: 0) | 302 Found [http://test.host/suppliers/2053932785]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSupplier Load (0.0ms)[0m   [0;1mSELECT * FROM `suppliers` WHERE (`suppliers`.`id` = 2053932785) [0m
+
+
+Processing SuppliersController#update (for 0.0.0.0 at 2009-11-29 22:15:40) [PUT]
+  Parameters: {"supplier"=>{}, "id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/suppliers/2053932785?]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+
+
+Processing UsersController#create (for 0.0.0.0 at 2009-11-29 22:15:40) [POST]
+  Parameters: {"user"=>{}}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users?]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2053932785) [0m
+
+
+Processing UsersController#destroy (for 0.0.0.0 at 2009-11-29 22:15:40) [DELETE]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/2053932785]
+  [4;35;1mSQL (0.0ms)[0m   [0mSELECT count(*) AS count_all FROM `users` [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2053932785) [0m
+
+
+Processing UsersController#edit (for 0.0.0.0 at 2009-11-29 22:15:40) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/2053932785/edit]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#index (for 0.0.0.0 at 2009-11-29 22:15:40) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+
+
+Processing UsersController#new (for 0.0.0.0 at 2009-11-29 22:15:40) [GET]
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2053932785) [0m
+
+
+Processing UsersController#show (for 0.0.0.0 at 2009-11-29 22:15:40) [GET]
+  Parameters: {"id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/2053932785]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2053932785) [0m
+
+
+Processing UsersController#update (for 0.0.0.0 at 2009-11-29 22:15:41) [PUT]
+  Parameters: {"user"=>{}, "id"=>"2053932785"}
+Redirected to http://test.host/
+Filter chain halted as [:authorize] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/users/2053932785?]
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBrand Load (0.0ms)[0m   [0mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` IS NULL) LIMIT 1[0m
+  [4;36;1mBrand Load (0.0ms)[0m   [0;1mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` = BINARY 'b01') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBrand Load (0.0ms)[0m   [0mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` IS NULL) LIMIT 1[0m
+  [4;36;1mBrand Load (0.0ms)[0m   [0;1mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` = BINARY 'b01') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mBrand Load (0.0ms)[0m   [0;1mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` = BINARY 'b01') LIMIT 1[0m
+  [4;35;1mBrand Create (0.0ms)[0m   [0mINSERT INTO `brands` (`status`, `updated_at`, `short_name`, `brand_name`, `created_at`) VALUES(0, '2009-11-29 14:19:56', 'b01', 'brand 01', '2009-11-29 14:19:56')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mBrand Load (0.0ms)[0m   [0mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` = BINARY 'b01' AND `brands`.id <> 2053932786) LIMIT 1[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBrand Load (0.0ms)[0m   [0mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` IS NULL) LIMIT 1[0m
+  [4;36;1mBrand Load (0.0ms)[0m   [0;1mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` = BINARY 'b01') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mBrand Load (0.0ms)[0m   [0;1mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` = BINARY 'b01') LIMIT 1[0m
+  [4;35;1mBrand Create (0.0ms)[0m   [0mINSERT INTO `brands` (`status`, `updated_at`, `short_name`, `brand_name`, `created_at`) VALUES(0, '2009-11-29 14:20:35', 'b01', 'brand 01', '2009-11-29 14:20:35')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mBrand Load (0.0ms)[0m   [0mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` = BINARY 'b01') LIMIT 1[0m
+  [4;36;1mSQL (31.0ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBrand Load (0.0ms)[0m   [0mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` IS NULL) LIMIT 1[0m
+  [4;36;1mBrand Load (0.0ms)[0m   [0;1mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` = BINARY 'b01') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mBrand Load (0.0ms)[0m   [0;1mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` = BINARY 'b01') LIMIT 1[0m
+  [4;35;1mBrand Create (0.0ms)[0m   [0mINSERT INTO `brands` (`status`, `updated_at`, `short_name`, `brand_name`, `created_at`) VALUES(0, '2009-11-29 14:21:46', 'b01', 'brand 01', '2009-11-29 14:21:46')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mBrand Load (0.0ms)[0m   [0mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` = BINARY 'b01') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mBrand Load (0.0ms)[0m   [0mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` = BINARY 'b01') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (31.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mBrand Load (0.0ms)[0m   [0mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` IS NULL) LIMIT 1[0m
+  [4;36;1mBrand Load (0.0ms)[0m   [0;1mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` = BINARY 'b01') LIMIT 1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mBrand Load (0.0ms)[0m   [0;1mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` = BINARY 'b01') LIMIT 1[0m
+  [4;35;1mBrand Create (0.0ms)[0m   [0mINSERT INTO `brands` (`status`, `updated_at`, `short_name`, `brand_name`, `created_at`) VALUES(0, '2009-11-29 14:22:33', 'b01', 'brand 01', '2009-11-29 14:22:33')[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mBrand Load (0.0ms)[0m   [0mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` = BINARY 'b01') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mBrand Load (0.0ms)[0m   [0mSELECT `brands`.id FROM `brands` WHERE (`brands`.`short_name` = BINARY 'b01') LIMIT 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK TO SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m

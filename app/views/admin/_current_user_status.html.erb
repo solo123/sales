@@ -1,0 +1,10 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<div style="padding:8px;font-size:80%;">
+  当前用户：<%= session[:user_name]  %>
+  <hr />
+  <a href="/admin/logout">退出登录</a> | <%= link_to "我的账户", :controller => :account %>
+</div>

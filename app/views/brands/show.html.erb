@@ -1,0 +1,13 @@
+<p>
+  <b>Short name:</b>
+  <%=h @brand.short_name %>
+</p>
+
+<p>
+  <b>Brand name:</b>
+  <%=h @brand.brand_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_brand_path(@brand) %> |
+<%= link_to 'Back', brands_path %>

@@ -1,0 +1,27 @@
+<%#
+# To change this template, choose Tools | Templates
+# and open the template in the editor.
+%>
+
+<ul id="tabnav">
+	<li><%= link_to '重设密码', "/account/reset/0" %></li>
+    <li><span>我的账户</span></li>
+</ul>
+<div id="main_zone">
+
+<% form_for(@account, :url => {:action => 'update'}) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :login_name,"登录名：" %><br />
+    <%= f.text_field :login_name %>
+  </p>
+  <p>
+    <%= f.label :nick_name, "用户名：" %><br />
+    <%= f.text_field :nick_name %>
+  </p>
+  <p>
+    <%= f.submit '保存' %>
+  </p>
+<% end %>
+</div>

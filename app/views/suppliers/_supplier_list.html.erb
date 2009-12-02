@@ -1,0 +1,28 @@
+<table>
+  <tr>
+    <th>Short name</th>
+    <th>Company name</th>
+    <th>Contact phone</th>
+    <th>Email</th>
+    <th>Address</th>
+    <th>Remark</th>
+  </tr>
+
+<% @suppliers.each do |supplier| %>
+  <tr>
+    <td><%=h supplier.short_name %></td>
+    <td><%=h supplier.company_name %></td>
+    <td><%=h supplier.contact_phone %></td>
+    <td><%=h supplier.email %></td>
+    <td><%=h supplier.address %></td>
+    <td><%=h supplier.remark %></td>
+    <td><%= link_to 'Show', supplier %></td>
+    <td><%= link_to 'Edit', edit_supplier_path(supplier) %></td>
+    <td><%= link_to 'Destroy', supplier, :confirm => 'Are you sure?', :method => :delete %>
+
+      <div style="float:left;margin-left:4px;" class="ui-state-default ui-corner-all"><%= link_to '删除',  { :action=>"delete",:id=>supplier.id}, :class=>"ui-icon ui-icon-close delete" %></div>
+
+    </td>
+  </tr>
+<% end %>
+</table>

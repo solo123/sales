@@ -1,0 +1,13 @@
+/* 
+    Document   : admin
+    Created on : 2009-11-8, 22:41:36
+    Author     : liang
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+#login_win {width:400px; margin: auto; margin-top: 20px;}
+#div_login_box {margin-bottom:4px;}
+#div_login_box h3 {margin:0;padding:4px;}
+#div_login_box div {padding:2px;}
+#div_login_box label {display:block;margin-top:10px;}

@@ -1,0 +1,29 @@
+<ul id="tabnav">
+	<li><span>品牌列表</span></li>
+	<li><%= link_to '新增品牌', new_brand_path %></li>
+</ul>
+<div id="main_zone">
+  <table class="data_table">
+  <tr>
+    <th>品牌缩写</th>
+    <th>品牌名称</th>
+    <th>操作</th>
+  </tr>
+
+<% @brands.each do |brand| %>
+  <tr>
+    <td><%=h brand.short_name %></td>
+    <td><%=h brand.brand_name %></td>
+    <td>
+      <div style="float:left;"  class="ui-state-default ui-corner-all" title="修改">
+        <%= link_to 'Edit', edit_brand_path(brand), :class=>"ui-icon ui-icon-pencil" %>
+      </div>
+      <div style="float:left;margin-left:8px;"  class="ui-state-default ui-corner-all" title="删除">
+        <%= link_to 'Destroy', brand, :confirm => 'Are you sure?', :method => :delete, :class=>"ui-icon ui-icon-close" %>
+      </div>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+</div>

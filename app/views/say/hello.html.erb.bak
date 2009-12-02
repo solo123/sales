@@ -1,0 +1,13 @@
+<html>
+<
+head>
+Hello,Rails!</title>
+<title>
+<
+/head>
+<body>
+<h1>
+Hello from Rails!</h1>
+<
+/body>
+</html>

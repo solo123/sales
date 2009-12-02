@@ -1,0 +1,2 @@
+module QuotationQueryHelper
+end
