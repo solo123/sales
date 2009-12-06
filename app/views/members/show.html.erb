@@ -1,0 +1,55 @@
+<div id="main_zone">
+  <p>
+  <b>Company:</b>
+  <%=h @member.company %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @member.name %>
+</p>
+
+<p>
+  <b>Mobile:</b>
+  <%=h @member.mobile %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @member.phone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @member.email %>
+</p>
+
+<p>
+  <b>Qq:</b>
+  <%=h @member.qq %>
+</p>
+
+<p>
+  <b>Pin:</b>
+  <%=h @member.pin %>
+</p>
+
+<p>
+  <b>Level:</b>
+  <%=h @member.level %>
+</p>
+
+<p>
+  <b>Last login:</b>
+  <%=h @member.last_login %>
+</p>
+
+<p>
+  <b>Level:</b>
+  <%=h @member.level %>
+</p>
+
+
+<%= link_to 'Edit', edit_member_path(@member) %> |
+<%= link_to 'Back', members_path %>
+</div>

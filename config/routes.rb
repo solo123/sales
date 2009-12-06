@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :members
+
   map.resources :brands, :collection => {:post_data => :post }
   map.resources :suppliers
   map.resources :users

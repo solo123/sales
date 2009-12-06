@@ -1,0 +1,46 @@
+<div id="main_zone">
+<h1>Listing members</h1>
+
+<table class="data_table">
+  <tr>
+    <th>Company</th>
+    <th>Name</th>
+    <th>Mobile</th>
+    <th>Phone</th>
+    <th>Email</th>
+    <th>Qq</th>
+    <th>Pin</th>
+    <th>Level</th>
+    <th>Last login</th>
+    <th>Level</th>
+    <th>操作</th>
+  </tr>
+
+<% @members.each do |member| %>
+  <tr>
+    <td><%=h member.company %></td>
+    <td><%=h member.name %></td>
+    <td><%=h member.mobile %></td>
+    <td><%=h member.phone %></td>
+    <td><%=h member.email %></td>
+    <td><%=h member.qq %></td>
+    <td><%=h member.pin %></td>
+    <td><%=h member.level %></td>
+    <td><%=h member.last_login %></td>
+    <td><%=h member.level %></td>
+    <td>
+      <div style="float:left;"  class="ui-state-default ui-corner-all" title="修改">
+        <%= link_to 'Edit', edit_member_path(member), :class=>"ui-icon ui-icon-pencil" %>
+      </div>
+      <div style="float:left;margin-left:8px;"  class="ui-state-default ui-corner-all" title="删除">
+        <%= link_to 'Destroy', member, :confirm => 'Are you sure?', :method => :delete, :class=>"ui-icon ui-icon-close" %>
+      </div>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New member', new_member_path %>
+</div>

@@ -9,12 +9,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091130025011) do
+ActiveRecord::Schema.define(:version => 20091206145641) do
 
   create_table "brands", :force => true do |t|
     t.string   "short_name"
     t.string   "brand_name"
     t.integer  "status",     :default => 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "members", :force => true do |t|
+    t.string   "company"
+    t.string   "name"
+    t.string   "mobile"
+    t.string   "phone"
+    t.string   "email"
+    t.string   "qq"
+    t.string   "pin"
+    t.integer  "level",      :default => 0
+    t.integer  "status",     :default => 0
+    t.datetime "last_login"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -50,11 +65,10 @@ ActiveRecord::Schema.define(:version => 20091130025011) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "remark"
-    t.string   "contact"
   end
 
   create_table "sessions", :force => true do |t|
-    t.string   "session_id", :null => false
+    t.string   "session_id", :default => "", :null => false
     t.text     "data"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -73,6 +87,7 @@ ActiveRecord::Schema.define(:version => 20091130025011) do
     t.integer  "status",        :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "contact"
   end
 
   create_table "users", :force => true do |t|
