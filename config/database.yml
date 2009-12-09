@@ -1,24 +1,16 @@
-production:
-  adapter: mysql
-  database: coolpur_sales
-  encoding: utf8
-  timeout: 5000
-  username: coolpur
-  password: aexGkQ5SrP
-  host: localhost
 development:
-  adapter: mysql
-  database: coolpur_sales
-  encoding: utf8
+  adapter: sqlite3
+  database: db/development.sqlite3
+  pool: 5
   timeout: 5000
-  username: coolpur
-  password: aexGkQ5SrP
-  host: localhost
 test:
-  adapter: mysql
-  database: coolpur_sales
-  encoding: utf8
+  adapter: sqlite3
+  database: db/test.sqlite3
+  pool: 5
   timeout: 5000
-  username: coolpur
-  password: aexGkQ5SrP
-  host: localhost
+
+production:
+  adapter: sqlite3
+  database: db/production.sqlite3
+  pool: 5
+  timeout: 5000
