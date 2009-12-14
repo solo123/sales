@@ -7,6 +7,7 @@
 <% form_tag("mobiles", :method => "get") do %>
   品牌：<%= select_tag "brand", "<option></option>" + options_for_select(Brand.all(:order => 'short_name').collect{ |b| [b.refname, b.id] })  %>
   型号：<%= text_field_tag :model %>
+  描述：<%= text_field_tag :remark %>
   <%= submit_tag("Search", :name => nil) %>
 <% end %>
 

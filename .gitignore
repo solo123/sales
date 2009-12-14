@@ -1,0 +1,8 @@
+*.swp
+*.sqlite3
+log/*.log
+tmp/**/*
+doc/api
+doc/plugin
+doc/app
+vendor/rails

@@ -32,19 +32,9 @@
 #navigate_menu ul li a:hover {background-color: #ffffcc;}
 
 .upcase_input {text-transform:uppercase;}
-.data_table_container {font: normal 11px auto "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	color: #4f6b72;
-	background: #E6EAE9;
-        padding:8px;
-}
-.data_table {width: 700px;
-	padding: 0;
-	margin: 0;}
-.data_table caption {
-	padding: 0 0 5px 0;
-	width: 700px;
-	font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
-	text-align: right;
+.data_table_container {font: normal 11px auto "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;color: #4f6b72;background: #E6EAE9; padding:8px;}
+.data_table {padding: 0;margin: 0;}
+.data_table caption {padding: 0 0 5px 0;width: 700px;font: italic 11px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;text-align: right;
 }
 .data_table .line_error {background-color: #ff9999;}
 .data_table .line_ok {background-color: #ccffcc;}

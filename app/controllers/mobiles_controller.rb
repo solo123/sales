@@ -11,8 +11,13 @@ class MobilesController < ApplicationController
     end
 
     unless params[:model].blank?
-      conditions << '(name like :model or part like :model or remark like :model)'
+      conditions << '(name like :model)'
       arguments[:model] = "%#{params[:model]}%"
+    end
+
+    unless params[:remark].blank?
+      conditions << '(part like :remark or remark like :remark)'
+      arguments[:remark] = "%#{params[:remark]}%"
     end
 
     all_conditions = conditions.join(' AND ')
