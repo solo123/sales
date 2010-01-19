@@ -9,7 +9,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091206145641) do
+ActiveRecord::Schema.define(:version => 20100119054250) do
+
+  create_table "action_logs", :force => true do |t|
+    t.integer  "userid"
+    t.string   "controller"
+    t.string   "action"
+    t.string   "paraid"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.float    "total"
+  end
 
   create_table "brands", :force => true do |t|
     t.string   "short_name"
@@ -17,6 +27,15 @@ ActiveRecord::Schema.define(:version => 20091206145641) do
     t.integer  "status",     :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "forgot_psws", :force => true do |t|
+    t.string   "user_mobile"
+    t.string   "pin"
+    t.datetime "date"
+    t.string   "send_by"
+    t.datetime "request_ip"
+    t.integer  "status",      :default => 0
   end
 
   create_table "members", :force => true do |t|
@@ -50,6 +69,16 @@ ActiveRecord::Schema.define(:version => 20091206145641) do
     t.integer  "mobile_id"
     t.decimal  "price",     :precision => 8, :scale => 2
     t.datetime "date"
+  end
+
+  create_table "notifiers", :force => true do |t|
+    t.string   "type"
+    t.integer  "member_id"
+    t.string   "address"
+    t.string   "message"
+    t.datetime "send_date"
+    t.datetime "sent_date"
+    t.integer  "status",    :default => 0
   end
 
   create_table "quotations", :force => true do |t|
